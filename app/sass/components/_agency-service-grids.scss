@@ -1,0 +1,53 @@
+.agency-grids {
+	.grid {
+		background-color: $white;
+		padding: 50px 30px;
+		position: relative;
+		@include transition-time(0.3s);
+		border-bottom: 5px solid lighten($black, 89%);;
+
+		&:after {
+			content: "";
+			background: lighten($black, 89%);
+			@include  linear-gradient-bg(left, $agency-theme-color2, $agency-theme-color3);
+			width: 0;
+			height: 5px;
+			position: absolute;
+			left: 0;
+			bottom: -5px;
+			@include transition-time(0.5s);
+		}
+
+		@include media-query(1199px) {
+			.icon img {
+				max-width: 45px;
+			}
+		}
+
+		@include media-query(991px) {
+			padding: 20px;
+		}
+
+		@include media-query(767px) {
+			padding: 20px;
+		}
+	}
+
+	h3 {
+		font-size: 24px;
+		font-size: calc-rem-value(24);
+		color: $agency-theme-color;
+		margin: 0.83em 0 0.92em;
+		text-transform: capitalize;
+
+		@include media-query(1199px) {
+			font-size: 20px;
+			font-size: calc-rem-value(20);
+		}
+
+		@include media-query(767px) {
+			font-size: 18px;
+			font-size: calc-rem-value(18);
+		}
+	}	
+}

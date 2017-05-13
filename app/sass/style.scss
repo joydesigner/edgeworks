@@ -1,0 +1,88 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+Theme Name: 	
+Version:        1.0.0
+Author:         themexriver
+URL:            http://themeforest.net/user/themexriver
+-------------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+#0.1  Theme Reset Style
+#0.2  Global Elements
+#1.0  header
+#1.1  hero
+#1.2  footer
+#1.3  agency-services
+#1.4  agency-cta
+#1.5  agency-about
+#1.6  agency-faq
+#1.7  agency-fun-fact
+#1.8  agency-team
+#1.9  agency-testimonials
+#1.10  agency-blog
+#1.11  agency-cta-s2
+#1.12  agency-contact-location
+
+
+-----------------------------------------------------------------
+#	Home cv
+-----------------------------------------------------------------
+#2.1	cv-partners
+#2.2	contact-section
+#2.3	others
+
+
+-----------------------------------------------------------------
+#	Home app-landing
+-----------------------------------------------------------------
+#3.1	app-landing-features
+#3.2	app-landing-cta
+#3.3	app-landing-funfact
+#3.4	app-info
+#3.5	pricing
+#3.6	app-landing-testimonials 
+#3.7	contact-section
+
+
+
+
+----------------------------------------------------------------*/
+
+// helpers
+@import "helpers/variables";
+@import "helpers/mixins";
+@import "helpers/functions";
+
+// base
+@import "base/base";
+
+// components
+@import "components/section-title";
+@import "components/buttons";
+@import "components/form";
+@import "components/sticky-header";
+@import "components/social-links";
+@import "components/page-title";
+@import "components/preloader";
+@import "components/agency-service-grids";
+@import "components/agency-team-grids";
+@import "components/agency-blog-grids";
+@import "components/cv-portfolio-grids";
+@import "components/app-landing-service-grids";
+@import "components/blog-sidebar";
+
+// layout
+@import "layout/header";
+@import "layout/hero";
+@import "layout/footer";
+
+// page
+@import "page/home-agency";
+@import "page/home-cv";
+@import "page/home-app-landing";
+@import "page/blog-single";
+
+

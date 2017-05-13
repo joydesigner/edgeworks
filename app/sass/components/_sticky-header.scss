@@ -1,0 +1,42 @@
+.sticky {
+	width: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 9999;
+	-webkit-animation: navigationFlipIn 0.5s;
+	animation: navigationFlipIn 0.5s;
+
+	.logo-bottom-shape {
+		visibility: visible;
+		opacity: 1;
+	}
+}
+
+.home-cv .sticky-s2  .navigation {
+	background-color: transparentize($cv-transparent-color, 0.1);
+}
+
+@-webkit-keyframes navigationFlipIn {
+	from {
+		-webkit-transform: translateY(-100%);
+		transform: translateY(-100%);
+	}
+
+	to {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+}
+
+@keyframes navigationFlipIn {
+	from {
+		-webkit-transform: translateY(-100%);
+		transform: translateY(-100%);
+	}
+
+	to {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+}

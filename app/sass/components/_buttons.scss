@@ -1,0 +1,64 @@
+.theme-btn {
+	line-height: 0.66em;
+	color: $white;
+	padding: 15px;
+	border: 0;
+	@include rounded-border(0);
+	text-transform: uppercase;
+
+	&:hover,
+	&:focus,
+	&:active {
+		// background-color: darken($theme-primary-color, 5%);
+		color: $white;
+	}
+
+	@include media-query(767px) {
+		padding: 12px;
+		font-size: 13px;
+	}
+}
+
+.agency-theme-btn {
+	font-family: $heading-font;
+	background: $agency-theme-color2;
+	@include linear-gradient-bg(top, $agency-theme-color2, $agency-theme-color3);
+	padding: 11px 35px;
+	font-size: 14px;
+	font-size: calc-rem-value(14);
+	color: $white;
+	border: 0;
+	@include rounded-border(25px);
+	text-transform: uppercase;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+
+	&:before {
+		content: "";
+		background: $agency-theme-color3;
+		@include linear-gradient-bg(top, $agency-theme-color3, $agency-theme-color2);
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		left: -100%;
+		top: 0;
+		@include rounded-border(25px);
+		z-index: -1;
+		@include transition-time(0.3s);
+	}
+
+	&:hover:before {
+		left: 0;
+	}
+
+	&:hover:hover {
+		color: $white;
+	}
+
+	@include media-query(991px) {
+		font-size: 13px;
+		font-size: calc-rem-value(13);
+		padding: 9px 30px;
+	}
+}

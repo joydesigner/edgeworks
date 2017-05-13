@@ -1,0 +1,88 @@
+.section-title {
+	text-align: center;
+	margin-bottom: 80px;
+	
+	@include media-query(991px) {
+		margin-bottom: 40px;
+	}
+
+	h2 {
+		font-family: $heading-font;
+		font-size: 40px;
+		font-size: calc-rem-value(40);
+		line-height: 0.8em;
+		color: $agency-theme-color;
+		margin: 0;
+		padding: 0 0 0.35em;
+		position: relative;
+		text-transform: capitalize;
+		display: inline-block;
+
+		@include media-query(991px) {
+			font-size: 30px;
+			font-size: calc-rem-value(30);
+		}
+
+		@include media-query(767px) {
+			font-size: 28px;
+			font-size: calc-rem-value(28);
+		}
+
+		@include media-query(330px) {
+			font-size: 26px;
+			font-size: calc-rem-value(26);
+		}
+
+		&:after {
+			content: "";
+			background-color: $agency-theme-color3;
+			width: 22px;
+			height: 4px;
+			position: absolute;
+			left: 0;
+			bottom: 0;
+		}
+	}
+
+	p {
+		margin: 30px 0 0;
+
+		@include media-query(991px) {
+			margin: 15px 0 0;
+		}
+	}
+}
+
+.app-section-title {
+	text-align: center;
+	margin-bottom: 85px;
+
+	@include media-query(991px) {
+		margin-bottom: 55px;
+	}
+
+	@include media-query(767px) {
+		margin-bottom: 50px;
+	}
+
+	h2 {
+		font-size: 30px;
+		font-size: calc-rem-value(30);
+		margin: 0;
+		color: $app-section-title-color;
+
+		@include media-query(991px) {
+			font-size: 28px;
+			font-size: calc-rem-value(28);
+		}
+
+		@include media-query(330px) {
+			font-size: 24px;
+			font-size: calc-rem-value(24);
+		}
+
+		span {
+			color: $app-theme-color;
+		}
+	}
+}

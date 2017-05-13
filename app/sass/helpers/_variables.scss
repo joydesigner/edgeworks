@@ -1,0 +1,51 @@
+/*---------------------------
+	Fonts
+----------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Arimo|Montserrat:200,300,400,600,700');
+
+// fonts
+$arimo: 'Arimo', sans-serif;
+$montserrat: 'Montserrat', sans-serif;
+
+$base-font: $arimo;
+$heading-font: $montserrat;
+
+$base-font-size: 16;
+
+// color
+$dark-gray: #2a2a2a;
+$white: #fff;
+$black: #000;
+$blue: #002e5b;
+$blue2: #263258;
+$blue3: #4d4889;
+$blue4: #1941af;
+$light-sky: #e9eaec;
+$light-gray: #555;
+$maroon: #573d68;
+$maroon2: #493d68;
+$powder-pink: #bf4066;
+$powder-soil: #393724;
+$yellow: #faaf0e;
+$powder-pink2: #c54066;
+$light-pink: #f9ecef;
+$powder-blue: #cdd5ed;
+
+
+$agency-theme-color: $blue;
+$agency-theme-color2: $maroon;
+$agency-theme-color3: $powder-pink;
+$body-bg-color: #f2f0f0;
+$section-bg-color: $light-sky;
+$text-color: $light-gray;
+$heading-color: $dark-gray;
+$agency-funfact-title-color: $powder-soil;
+$cv-transparent-color: $blue2;
+$app-theme-color: $powder-pink2;
+$app-theme-color2: $maroon2;
+$app-section-title-color: $powder-soil;
+$app-landing-features-bgcolor: $light-pink;
+$app-landind-pricing-color: $blue3;
+$app-landind-pricing-shadow: $blue4;
+$app-landing-scroll-dots-color: $powder-blue;
+

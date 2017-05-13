@@ -1,0 +1,80 @@
+.app-services .grids {
+	text-align: center;
+
+	.grid h3 {
+		font-size: 18px;
+		font-size: calc-rem-value(18);
+		padding-bottom: 0.8em;
+		margin: 0 0 1em;
+		text-transform: capitalize;
+		position: relative;
+
+		@include media-query(767px) {
+			font-size: 16px;
+			font-size: calc-rem-value(16);
+		}
+
+		&:after {
+			content: "";
+			background-color: $app-theme-color;
+			width: 25px;
+			height: 1px;
+			position: absolute;
+			left: 50%;
+			bottom: 0;
+			@include translatingX();
+		}
+	}
+
+	.grid .icon {
+		margin-bottom: 50px;
+
+		@include media-query(1199px) {
+			margin-bottom: 40px;
+		}
+
+		@include media-query(767px) {
+			margin-bottom: 30px;
+		}
+	}
+
+	.grid .icon img {
+		max-width: 250px;
+		display: inline-block;
+
+		@include media-query(1199px) {
+			max-width: 200px;
+		}
+
+		@include media-query(991px) {
+			max-width: 150px;
+		}
+
+		@include media-query(767px) {
+			max-width: 120px;
+		}
+	}
+
+	.grid p {
+		margin: 0;
+	}
+
+	.owl-controls {
+		margin-top: 65px;
+
+		@include media-query(767px) {
+			margin-top: 30px;
+		}
+
+		.owl-dots .owl-dot span {
+			background-color: lighten($black, 70%);
+			margin: 0 10px 0 0;
+		}
+
+		.owl-dots .active span {
+			background-color: $app-theme-color;
+			width: 11px;
+			height: 11px;
+		}
+	}
+}
